@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NESTLY - Book Your Stay</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <h2>Sign Up / Log In</h2>
+    <p>If you haven't signed up or logged in yet, click the link below:</p>
+    <a href="LOGIN.php" class="button">Sign Up / Log In</a>
+</section>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+        </ul>
+    </nav>
+    <h1>Discover, Connect, Preserve – Only with Nestly</h1>
+    <div class="search-bar">
+        <form action="city.php" method="get">
+            <input type="text" name="city" placeholder="Search by City">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Nestly aims to redefine travel by introducing a streamlined, eco-conscious, and user-centric hotel booking platform...</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="service12.jpg" alt="Service 1">
+                <h3>Hotel Booking</h3>
+                <p>Discover a wide range of hotels around the world and book your stay hassle-free.</p>
+            </div>
+            <div class="service">
+                <img src="service2.jpg" alt="Service 2">
+                <h3>Property Rental</h3>
+                <p>Rent a cozy apartment, beach house, or villa for your next vacation.</p>
+            </div>
+            <div class="service">
+                <img src="service4.JPG" alt="Service 3">
+                <h3>Customer Support</h3>
+                <p>Our dedicated customer support team is available 24/7 to assist you with any inquiries or issues.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<section>
+    <h2> Find a place based off rating </h2>
+    <form method="GET" action="sample.php">
+        <input type="text" name="rating" placeholder="1-5">
+        <button type="submit">NESTLE</button>
+    </form>
+</section>
+
+
+<section style="text-align: center; margin-top: 20px;">
+    <button onclick="window.location.href='experiences.php';" class="button">View Local Experiences</button>
+</section>
+
+</body>
+</html>
